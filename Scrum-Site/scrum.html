@@ -9,6 +9,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
+<style>
+
+.styinput{
+  height:1.8rem;border-radius:7px;border:0.5px solid rgb(180, 180, 180);margin-top: 5px;padding: 10px;
+}
+
+</style>
 <body>
   <nav class="navbar " role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
@@ -281,15 +288,24 @@
           <div class="box">
             <div style="border-radius: 0px;" class="box">
               <div class="columns is-multiline">
-                <div class="column is-11">
+               
+                <div class="column is-12">
+                  <button class="delete is-large is-pulled-right"></button>
+                </div>
+                <div class="column is-8">
                   <p style="margin-left: 10px;" class="title is-4 has-text-black ">Tarefa1-Titulo</p>
                   <p style="margin-left: 10px;" class="subtitle is-5 has-text-black">Coluna-1</p>
                 </div>
-                <div class="column is-1">
-                  <button class="delete is-large is-pulled-right"></button>
+                <div  class="column is-4 ">
+                  <p class="is-size-5 " >Time</p>
+                  <div style="display: flex;" id="time">
+                      <div class="has-background-black" style="color: white;width:30px;height:30px;border-radius: 50%;"><p class="is-size-7" style="text-align: center;vertical-align: middle;line-height: 30px">NM</p></div>   
+                      <div class="has-background-primary" style="color: white;width:30px;height:30px;border-radius: 50%;"><p class="is-size-7" style="text-align: center;vertical-align: middle;line-height: 30px;">NM</p></div>   
+                      <div class="has-background-link" style="color: white;width:30px;height:30px;border-radius: 50%;"><p class="is-size-7" style="text-align: center;vertical-align: middle;line-height: 30px;">NM</p></div>   
+                      <div class="has-background-info" style="color: white;width:30px;height:30px;border-radius: 50%;"><p class="is-size-7" style="text-align: center;vertical-align: middle;line-height: 30px;">NM</p></div>   
+                      <div class="has-background-success" style="color: white;width:30px;height:30px;border-radius: 50%;"><p class="is-size-7" style="text-align: center;vertical-align: middle;line-height: 30px;">+3</p></div>   
+                  </div>
                 </div>
-
-              </div>
 
               <div class="column is-12">
                 <article class="message">
@@ -355,8 +371,85 @@
 
               </div>
 
-             
+              <div class="column is-5 ">
+                <p class="is-size-4">Data</p>
+                <div>
+                  <date>24/05/2022</date>
+                  <time>13:30</time>
+                  <button class="button is-small"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                  <button class="button is-small"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                </div>
+                <div>
+                  <date>24/05/2022</date>
+                  <time>15:25</time>
+                    <button class="button is-small"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    <button class="button is-small"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                </div>
+                <div>
+                  <date>27/05/2022</date>
+                  <time>12:30</time>
+                  <button class="button is-small"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                  <button class="button is-small"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                </div>
+                <div>
+                  <date>28/05/2022</date>
+                  <time>11:00</time>
+                  <button class="button is-small"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                  <button class="button is-small"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                </div>
+                <div>
+                  <input class="styinput" type="date">
+                  <input class="styinput" type="time">
+                  <button  style="margin-top: 5px;" class="button is-small"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                  
+                </div>
+              </div>
+              <div class="column is-7 ">
+                <p class="is-size-4">Checklists</p>
+                <div>
+                  <input type="checkbox" id="op1">
+                    <label for="op1">Realizar tarefa 1
+                      <button class="button is-small"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                      <button class="button is-small"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                    </label>
+                </div>
+                <div>
+                  <input type="checkbox" id="op2">
+                    <label for="op2">Realizar tarefa 2
+                      <button class="button is-small"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                      <button class="button is-small"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                    </label>
+              </div>
+                <div>
+                  <input type="checkbox" id="op3">
+                    <label for="op3">Realizar tarefa 3
+                      <button class="button is-small"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                      <button class="button is-small"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                    </label>
+              </div>
+                <div>
+                  <input type="checkbox" id="op4">
+                    <label for="op4">Realizar tarefa 4
+                      <button class="button is-small"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                      <button class="button is-small"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                    </label>
+              </div>
+                <div>
+                  <input type="checkbox" id="op5">
+                    <label for="op5">
+                      <input class="styinput" style="width: 85%;" type="text">
+                      <button style="margin-top: 5px;" class="button is-small "><i class="fa fa-plus" aria-hidden="true"></i></button>
+                      
+                    </label>
+              </div>
+
+                
+              </div>
+              
             </div>
+            </div>
+            
+            
 
           </div>
         </div>
